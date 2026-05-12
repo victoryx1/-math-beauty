@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数学基础与逻辑 / Foundations & Logic — 数学之美</title>
+<script>
+MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] }, options: { ignoreHtmlClass: 'no-mathjax' } };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="branch.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">数学<span>之美</span> <span class="en">Beauty of Math</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#timeline">时间线 <span class="en">Timeline</span></a></li>
+      <li class="nav-dropdown">
+        <a>数学分支 <span class="en">Branches</span> &#x25BE;</a>
+        <div class="nav-dropdown-menu">
+          <a href="algebra.html">算术与代数 <span class="en">Algebra</span></a>
+          <a href="geometry.html">几何 <span class="en">Geometry</span></a>
+          <a href="analysis.html">数学分析 <span class="en">Analysis</span></a>
+          <a href="number-theory.html">数论 <span class="en">Number Theory</span></a>
+          <a href="probability.html">概率论与统计 <span class="en">Probability</span></a>
+          <a href="topology.html">拓扑学 <span class="en">Topology</span></a>
+          <a href="foundations.html" style="color:#d4a853;">基础与逻辑 <span class="en">Foundations</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#messages">留言板 <span class="en">Guestbook</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1><em>数学基础与逻辑</em></h1>
+    <p class="sub">"数学的基础是什么？"——一个让最聪明的大脑们激烈交锋了两千年的问题。</p>
+    <p class="en" style="font-size:0.95rem;">"What is the foundation of mathematics?" — a question that has set the greatest minds against each other for two millennia.</p>
+  </div>
+  <div class="scroll-hint"><span>&#x25BC;</span></div>
+</header>
+
+<section>
+  <div class="section-inner">
+    <div class="section-title"><h2>发展历史</h2><p class="en-sub">Historical Development</p><div class="line"></div></div>
+    <div class="timeline-wrap">
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">约公元前 350 年 &nbsp;<span class="en">c. 350 BCE</span></div><h3>亚里士多德的逻辑学 <span class="en">Aristotle's Logic</span></h3><p>建立了形式逻辑的初步体系——三段论（syllogism）："所有人都会死，苏格拉底是人，所以苏格拉底会死。"这成为此后两千年逻辑学的基本框架。<br><span class="en">Established the system of syllogisms: "All men are mortal; Socrates is a man; therefore Socrates is mortal." This was the basic framework of logic for the next two millennia.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">约公元前 300 年 &nbsp;<span class="en">c. 300 BCE</span></div><h3>欧几里得的公理化方法 <span class="en">Euclid's Axiomatic Method</span></h3><p>《几何原本》从 5 条公设出发，以演绎逻辑推导出全部几何命题。这是人类历史上第一个公理化体系——从少数自明之"理"建造出整个知识大厦。<br><span class="en">The Elements derived all geometric propositions from just 5 postulates by deductive logic. The first axiomatic system in history — building an entire edifice of knowledge from a few self-evident truths.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1854 年 &nbsp;<span class="en">1854</span></div><h3>布尔代数 <span class="en">Boolean Algebra</span></h3><p>乔治·布尔将逻辑转化为代数——用 AND、OR、NOT 三种运算建立了"布尔代数"。逻辑成为可以计算的数学对象。今天的计算机芯片本质上就是在运行布尔代数。<br><span class="en">George Boole transformed logic into algebra — Boolean algebra with AND, OR, NOT. Logic became a computational mathematical object. Today's computer chips are essentially running Boolean algebra.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1874 — 1899 年 &nbsp;<span class="en">1874–1899</span></div><h3>康托尔：集合论与无穷 <span class="en">Cantor: Set Theory & Infinity</span></h3><p>创立集合论，证明了实数不可数，建立了超限基数 ℵ₀, ℵ₁……的层级。他证明了自然数和有理数"一样多"，但实数"更多"。克罗内克斥之为"神学"，但集合论最终成为数学的基础语言。<br><span class="en">Founded set theory, proved the reals are uncountable, established the hierarchy of transfinite cardinals ℵ₀, ℵ₁... Kronecker called it "theology," but set theory eventually became the foundational language of all mathematics.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1901 年 &nbsp;<span class="en">1901</span></div><h3>罗素悖论 <span class="en">Russell's Paradox</span></h3><p>考虑"所有不包含自身的集合构成的集合 R"——R 是否包含自身？两种假设都导致矛盾。这个简单的悖论动摇了康托尔集合论的根基，引发了第三次数学危机。<br><span class="en">Consider "the set R of all sets that do not contain themselves" — does R contain itself? Either assumption leads to contradiction. This simple paradox shook the foundations of Cantor's set theory, triggering the third mathematical crisis.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1910 — 1913 年 &nbsp;<span class="en">1910–1913</span></div><h3>《数学原理》 <span class="en">Principia Mathematica</span></h3><p>罗素与怀特海在三大卷中试图将全部数学归结为逻辑。证明 1+1=2 竟用了三百多页（命题✱54.43）。这部巨著虽未成功，但极大推动了数理逻辑的发展。<br><span class="en">Russell and Whitehead attempted to reduce all mathematics to logic in three volumes. The proof of 1+1=2 took over 300 pages (Proposition ✱54.43). Though it failed, it enormously advanced mathematical logic.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1931 年 &nbsp;<span class="en">1931</span></div><h3>哥德尔不完备定理 <span class="en">Gödel's Incompleteness Theorems</span></h3><p>25岁的哥德尔粉碎了希尔伯特的梦想：任何包含算术的、递归可公理化的系统，要么不完备，要么有矛盾。真理永远多于证明——这一结论深刻而美丽，至今振聋发聩。<br><span class="en">The 25-year-old Gödel shattered Hilbert's dream: any consistent, recursively axiomatizable system containing arithmetic is necessarily incomplete. Truth forever exceeds provability — a conclusion as profound as it is beautiful.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1936 年 &nbsp;<span class="en">1936</span></div><h3>图灵机与可计算性 <span class="en">Turing Machines & Computability</span></h3><p>图灵定义了一种理想化的计算机——图灵机，并证明了停机问题不可判定：不存在通用算法判定任意程序是否会停机。这一结论直接划定了"计算"的绝对极限。<br><span class="en">Turing defined an idealized computing machine and proved the Halting Problem undecidable: no algorithm can determine whether an arbitrary program will halt. This directly delineates the absolute limits of computation.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1945 年以后 &nbsp;<span class="en">1945–present</span></div><h3>范畴论：数学的新基础？ <span class="en">Category Theory: A New Foundation?</span></h3><p>艾伦伯格与麦克莱恩引入范畴论，格罗滕迪克将其发展为强大的统一框架。范畴论不从"元素属于集合"出发，而从"态射（关系）"出发——为数学提供了比集合论更灵活的基础语言。<br><span class="en">Eilenberg and Mac Lane introduced category theory; Grothendieck developed it into a powerful unifying framework. Category theory starts from "morphisms" (relationships), not "elements belong to sets" — offering a more flexible foundational language than set theory.</span></p></div><div class="tl-spacer"></div></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="dark-section">
+  <div class="section-inner">
+    <div class="section-title"><h2>重要结论</h2><p class="en-sub">Key Theorems</p><div class="line"></div></div>
+    <div class="theorem-grid">
+      <div class="th-card"><h3>哥德尔第一不完备定理 <span class="en">Gödel's First Incompleteness Theorem</span></h3><div class="formula-display">$$T \text{ consistent} \Rightarrow \exists \varphi: T \nvdash \varphi \land T \nvdash \neg\varphi$$</div><p>任何一致且包含算术的形式系统中，存在一个不可判定的真命题。真理永远溢出形式证明的边界——这是逻辑学最深远的结论之一。<br><span class="en">In any consistent formal system containing arithmetic, there exists an undecidable true proposition. Truth forever overflows the boundaries of formal proof — one of the most far-reaching conclusions in all logic.</span></p></div>
+      <div class="th-card"><h3>图灵停机问题 <span class="en">Turing's Halting Problem</span></h3><div class="formula-display">$$\text{No universal algorithm decides whether a program halts}$$</div><p>不仅是一个计算机科学结论，更是深刻的哲学洞见：存在明确可陈述的问题，它们永远无法被算法解决。计算的边界是逻辑必然，而非工程限制。<br><span class="en">Not just a computer science result but a deep philosophical insight: there exist well-stated problems that no algorithm can ever solve. The boundary of computation is logical necessity, not engineering limitation.</span></p></div>
+      <div class="th-card"><h3>康托尔对角线论证 <span class="en">Cantor's Diagonal Argument</span></h3><div class="formula-display">$$|\mathbb{N}| = \aleph_0 < 2^{\aleph_0} = |\mathbb{R}|$$</div><p>实数比自然数"更多"——无穷也有大小之分。对角线论证的精巧令人叹为观止：假设你列出了所有实数，我可以构造一个不在你列表中的新实数。<br><span class="en">The reals are "more numerous" than the naturals — there are sizes of infinity. The diagonal argument is breathtakingly elegant: suppose you list all reals; I can construct one not on your list.</span></p></div>
+      <div class="th-card"><h3>连续统假设的独立性 <span class="en">Independence of the Continuum Hypothesis</span></h3><div class="formula-display">$$2^{\aleph_0} = \aleph_1\;? \quad\text{(Independent of ZFC)}$$</div><p>哥德尔和科恩证明了：在 ZFC 公理集合论中，连续统假设既不能被证明，也不能被否定——它独立于 ZFC。又一个不完备的惊人实例。<br><span class="en">Gödel and Cohen proved that CH can be neither proved nor disproved within ZFC — it is independent. Yet another stunning instance of incompleteness, this time in the very foundations of set theory.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<footer><p>数学之美 &mdash; 献给所有热爱思考的心灵 &nbsp;|&nbsp; <span class="en">Beauty of Math — For all who love to think</span></p></footer>
+</body>
+</html>

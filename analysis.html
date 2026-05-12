@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数学分析 / Mathematical Analysis — 数学之美</title>
+<script>
+MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] }, options: { ignoreHtmlClass: 'no-mathjax' } };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="branch.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">数学<span>之美</span> <span class="en">Beauty of Math</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#timeline">时间线 <span class="en">Timeline</span></a></li>
+      <li class="nav-dropdown">
+        <a>数学分支 <span class="en">Branches</span> &#x25BE;</a>
+        <div class="nav-dropdown-menu">
+          <a href="algebra.html">算术与代数 <span class="en">Algebra</span></a>
+          <a href="geometry.html">几何 <span class="en">Geometry</span></a>
+          <a href="analysis.html" style="color:#d4a853;">数学分析 <span class="en">Analysis</span></a>
+          <a href="number-theory.html">数论 <span class="en">Number Theory</span></a>
+          <a href="probability.html">概率论与统计 <span class="en">Probability</span></a>
+          <a href="topology.html">拓扑学 <span class="en">Topology</span></a>
+          <a href="foundations.html">基础与逻辑 <span class="en">Foundations</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#messages">留言板 <span class="en">Guestbook</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1><em>数学分析</em></h1>
+    <p class="sub">从"飞矢不动"的悖论到 ε-δ 的精确——人类驯服"无穷"的漫长征程。</p>
+    <p class="en" style="font-size:0.95rem;">From Zeno's paradox of the motionless arrow to the precision of ε-δ — humanity's long campaign to tame infinity.</p>
+  </div>
+  <div class="scroll-hint"><span>&#x25BC;</span></div>
+</header>
+
+<section>
+  <div class="section-inner">
+    <div class="section-title"><h2>发展历史</h2><p class="en-sub">Historical Development</p><div class="line"></div></div>
+    <div class="timeline-wrap">
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">约公元前 450 年 &nbsp;<span class="en">c. 450 BCE</span></div><h3>芝诺悖论 <span class="en">Zeno's Paradoxes</span></h3><p>芝诺提出"飞矢不动""阿喀琉斯追乌龟"等悖论，尖锐地揭示了无穷分割与运动之间的矛盾，直指极限概念的核心。两千余年后才有真正的数学解答。<br><span class="en">Zeno's paradoxes — the motionless arrow, Achilles and the tortoise — sharply exposed the contradiction between infinite divisibility and motion, striking at the heart of the limit concept.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">约公元前 400 年 &nbsp;<span class="en">c. 400 BCE</span></div><h3>欧多克索斯：穷竭法 <span class="en">Eudoxus: Method of Exhaustion</span></h3><p>用内接多边形逐步逼近曲线形面积，在逻辑上绕过"无穷小"。为极限理论埋下了第一粒种子。<br><span class="en">Approximated curvilinear areas with inscribed polygons, logically bypassing "infinitesimals." This planted the first seed of limit theory.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">约公元前 250 年 &nbsp;<span class="en">c. 250 BCE</span></div><h3>阿基米德：积分的先驱 <span class="en">Archimedes: Precursor of Integration</span></h3><p>严格证明了抛物线弓形面积等于内接三角形面积的 4/3，并给出 π 的上下界。实质上已完成定积分计算——比牛顿莱布尼茨早近两千年。<br><span class="en">Proved rigorously that the area of a parabolic segment is 4/3 that of the inscribed triangle. Essentially computed a definite integral — nearly two millennia before Newton and Leibniz.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1665 — 1684 年 &nbsp;<span class="en">1665–1684</span></div><h3>牛顿与莱布尼茨 <span class="en">Newton & Leibniz</span></h3><p>牛顿发明"流数术"，莱布尼茨独立建立了微分与积分的关系并引入 ∫ 和 dy/dx 记号。微积分的发明宣告了现代数学的诞生。<br><span class="en">Newton invented "fluxions"; Leibniz independently developed the calculus and introduced the ∫ and dy/dx notation. The invention of calculus heralded modern mathematics.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1734 — 1748 年 &nbsp;<span class="en">1734–1748</span></div><h3>欧拉：分析的集大成者 <span class="en">Euler: Synthesizer of Analysis</span></h3><p>引入 f(x) 记号，在《无穷小分析引论》中建立了无穷级数、无穷乘积的系统理论。他证明了 ζ(2)=π²/6，发现了 e^{iθ}=cosθ+isinθ。<br><span class="en">Introduced f(x) notation. In "Introductio in analysin infinitorum," he built a systematic theory of infinite series and products. He proved ζ(2)=π²/6, discovered e^{iθ}=cosθ+isinθ.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1821 年 &nbsp;<span class="en">1821</span></div><h3>柯西：分析的严格化 <span class="en">Cauchy: Rigorization of Analysis</span></h3><p>出版《分析教程》，首次以严格的极限概念定义连续性、导数和积分。用不等式取代直觉的"无穷小"描述，驱散了笼罩微积分近两百年的逻辑迷雾。<br><span class="en">Published "Cours d'Analyse," defining continuity, derivatives, and integrals rigorously via limits. He replaced intuitive "infinitesimals" with inequalities, clearing the fog of two centuries.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1854 年 &nbsp;<span class="en">1854</span></div><h3>黎曼积分 <span class="en">Riemann Integral</span></h3><p>精确刻画了"哪些函数可以积分"。他给出了一个在无穷多个点处不连续却仍然可积的函数——颠覆了人们对连续性的直觉。<br><span class="en">Precisely characterized "which functions are integrable." He produced a function discontinuous at infinitely many points yet still integrable — shattering intuition about continuity.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1861 — 1872 年 &nbsp;<span class="en">1861–1872</span></div><h3>魏尔斯特拉斯：ε-δ 语言 <span class="en">Weierstrass: ε-δ Language</span></h3><p>将极限彻底算术化，给出了"处处连续但处处不可导"的函数，震惊数学界。戴德金和康托尔分别给出了实数的严格定义——分析学的逻辑根基至此完备。<br><span class="en">Arithmetized limits completely with ε-δ, and presented a function continuous everywhere but differentiable nowhere — shocking the mathematical world. Dedekind and Cantor gave rigorous definitions of real numbers.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1902 年 &nbsp;<span class="en">1902</span></div><h3>勒贝格积分 <span class="en">Lebesgue Integral</span></h3><p>将黎曼的"竖切"改为"横切"（按函数值分割定义域），极大地扩展了可积函数的范围，成为实变函数论、泛函分析和概率论的基石。<br><span class="en">Changed Riemann's "vertical slicing" to "horizontal slicing" (partitioning by function value), vastly expanding the class of integrable functions. The foundation for real analysis, functional analysis, and probability.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">20 世纪至今 &nbsp;<span class="en">20th C.–present</span></div><h3>泛函分析与现代分析 <span class="en">Functional Analysis & Modern Analysis</span></h3><p>希尔伯特空间、巴拿赫空间、分布理论（施瓦茨）——分析学从具体的函数扩展到无穷维空间上的算子，与量子力学、偏微分方程深度交织。<br><span class="en">Hilbert spaces, Banach spaces, distribution theory (Schwartz) — analysis expanded from concrete functions to operators on infinite-dimensional spaces, deeply intertwining with quantum mechanics and PDEs.</span></p></div><div class="tl-spacer"></div></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="dark-section">
+  <div class="section-inner">
+    <div class="section-title"><h2>重要结论</h2><p class="en-sub">Key Theorems</p><div class="line"></div></div>
+    <div class="theorem-grid">
+      <div class="th-card"><h3>微积分基本定理 <span class="en">Fundamental Theorem of Calculus</span></h3><div class="formula-display">$$\int_a^b f(x)\,dx = F(b) - F(a)$$</div><p>微分与积分互为逆运算——数学中最深刻的统一之一。面积的计算转化为原函数在端点的差值。<br><span class="en">Differentiation and integration are inverse operations — one of the deepest unifications in mathematics. Area calculation reduces to evaluating an antiderivative at endpoints.</span></p></div>
+      <div class="th-card"><h3>泰勒定理 <span class="en">Taylor's Theorem</span></h3><div class="formula-display">$$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n$$</div><p>"好"函数可以用多项式无限逼近。泰勒级数是数值计算、物理近似和科学计算的基石。<br><span class="en">Any "nice" function can be approximated arbitrarily well by polynomials. Taylor series are the bedrock of numerical computation, physical approximation, and scientific computing.</span></p></div>
+      <div class="th-card"><h3>柯西积分公式 <span class="en">Cauchy Integral Formula</span></h3><div class="formula-display">$$f(z_0) = \frac{1}{2\pi i} \oint_\gamma \frac{f(z)}{z - z_0}\,dz$$</div><p>闭合曲线内部任意点的函数值完全由边界值决定——全纯函数的"刚性"在此体现得淋漓尽致。<br><span class="en">The value of a holomorphic function at any interior point is completely determined by its values on the boundary — the "rigidity" of holomorphic functions in full display.</span></p></div>
+      <div class="th-card"><h3>魏尔斯特拉斯函数 <span class="en">Weierstrass Function</span></h3><div class="formula-display">$$f(x) = \sum_{n=0}^{\infty} a^n \cos(b^n \pi x)$$</div><p>1872年构造的处处连续、无处可导的函数，摧毁了"连续函数大体可导"的直觉。数学从此不再依赖几何直观，转而完全依赖逻辑与证明。<br><span class="en">A function continuous everywhere but differentiable nowhere (1872), destroying the intuition that "continuous functions are mostly differentiable." Mathematics turned away from geometric intuition toward pure logic and proof.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<footer><p>数学之美 &mdash; 献给所有热爱思考的心灵 &nbsp;|&nbsp; <span class="en">Beauty of Math — For all who love to think</span></p></footer>
+</body>
+</html>

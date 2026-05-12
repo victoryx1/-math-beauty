@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>概率论与统计 / Probability & Statistics — 数学之美</title>
+<script>
+MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] }, options: { ignoreHtmlClass: 'no-mathjax' } };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="branch.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">数学<span>之美</span> <span class="en">Beauty of Math</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#timeline">时间线 <span class="en">Timeline</span></a></li>
+      <li class="nav-dropdown">
+        <a>数学分支 <span class="en">Branches</span> &#x25BE;</a>
+        <div class="nav-dropdown-menu">
+          <a href="algebra.html">算术与代数 <span class="en">Algebra</span></a>
+          <a href="geometry.html">几何 <span class="en">Geometry</span></a>
+          <a href="analysis.html">数学分析 <span class="en">Analysis</span></a>
+          <a href="number-theory.html">数论 <span class="en">Number Theory</span></a>
+          <a href="probability.html" style="color:#d4a853;">概率论与统计 <span class="en">Probability</span></a>
+          <a href="topology.html">拓扑学 <span class="en">Topology</span></a>
+          <a href="foundations.html">基础与逻辑 <span class="en">Foundations</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#messages">留言板 <span class="en">Guestbook</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1><em>概率论与统计</em></h1>
+    <p class="sub">从赌徒的困惑到宇宙规律——人类驯服随机性的智慧。</p>
+    <p class="en" style="font-size:0.95rem;">From a gambler's perplexity to the laws of the universe — humanity's wisdom in taming randomness.</p>
+  </div>
+  <div class="scroll-hint"><span>&#x25BC;</span></div>
+</header>
+
+<section>
+  <div class="section-inner">
+    <div class="section-title"><h2>发展历史</h2><p class="en-sub">Historical Development</p><div class="line"></div></div>
+    <div class="timeline-wrap">
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">16 世纪 &nbsp;<span class="en">16th Century</span></div><h3>卡尔达诺与赌博 <span class="en">Cardano on Gambling</span></h3><p>卡尔达诺在《论赌博游戏》中首次计算了掷骰子的概率，引入概率乘积法则——不过书在他死后近百年才出版。<br><span class="en">In "Liber de Ludo Aleae," Cardano computed dice probabilities and introduced the product rule for independent events — though the book was published nearly a century after his death.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1654 年 &nbsp;<span class="en">1654</span></div><h3>帕斯卡与费马：概率论的诞生 <span class="en">Pascal & Fermat: Birth of Probability</span></h3><p>赌徒梅雷向帕斯卡请教：赌博中途停止，如何公平分配赌注？帕斯卡与费马的通信讨论建立了概率论的数学基础——1654年被定为概率论元年。<br><span class="en">The gambler de Méré asked Pascal: how to fairly split stakes when a game is interrupted? The Pascal–Fermat correspondence established the mathematical foundation of probability — 1654 is its birth year.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1713 年 &nbsp;<span class="en">1713</span></div><h3>伯努利：大数定律 <span class="en">Bernoulli: Law of Large Numbers</span></h3><p>雅各布·伯努利遗著《猜度术》出版，证明了第一个大数定律：试验次数越多，频率越接近概率。确定性从不确定性中浮现。<br><span class="en">Jacob Bernoulli's posthumous "Ars Conjectandi" proved the first Law of Large Numbers: the more trials, the closer frequency gets to probability. Certainty emerges from uncertainty.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1763 年 &nbsp;<span class="en">1763</span></div><h3>贝叶斯定理 <span class="en">Bayes' Theorem</span></h3><p>托马斯·贝叶斯的遗作发表，提出 P(A|B)=P(B|A)·P(A)/P(B)。这个公式成为现代统计推断的两大支柱之一，在机器学习时代焕发新的光辉。<br><span class="en">Thomas Bayes' posthumous paper proposed P(A|B)=P(B|A)·P(A)/P(B). This formula became one of the two pillars of modern statistical inference, shining anew in the age of machine learning.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1812 年 &nbsp;<span class="en">1812</span></div><h3>拉普拉斯 <span class="en">Laplace</span></h3><p>《概率的分析理论》集概率论之大成，提出"拉普拉斯妖"思想实验：知道宇宙全部当前状态的智慧存在可以预测一切未来。同时给出中心极限定理的早期形式。<br><span class="en">"Théorie analytique des probabilités" synthesized probability theory. Laplace's Demon — an intellect knowing all present states of the universe — could predict all futures. He also gave early forms of the Central Limit Theorem.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1933 年 &nbsp;<span class="en">1933</span></div><h3>柯尔莫哥洛夫公理化 <span class="en">Kolmogorov's Axiomatization</span></h3><p>将概率论建立在测度论上，给出三大公理：非负性、规范性、可列可加性。概率论从此成为严谨的数学分支，与分析学无缝对接。<br><span class="en">Built probability on measure theory with three axioms: non-negativity, normalization, and countable additivity. Probability became a rigorous branch of mathematics, seamlessly integrated with analysis.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">20 世纪后半叶 &nbsp;<span class="en">Late 20th Century</span></div><h3>随机过程与现代应用 <span class="en">Stochastic Processes & Modern Applications</span></h3><p>马尔可夫链、维纳过程的数学理论、伊藤积分——随机分析使我们能用微积分处理随机现象。概率论深入渗透到金融、机器学习、统计力学和生物信息学中。<br><span class="en">Markov chains, Wiener's theory of Brownian motion, Itō calculus — stochastic analysis lets us treat random phenomena with calculus. Probability now pervades finance, ML, statistical mechanics, and bioinformatics.</span></p></div><div class="tl-spacer"></div></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="dark-section">
+  <div class="section-inner">
+    <div class="section-title"><h2>重要结论</h2><p class="en-sub">Key Theorems</p><div class="line"></div></div>
+    <div class="theorem-grid">
+      <div class="th-card"><h3>大数定律 <span class="en">Law of Large Numbers</span></h3><div class="formula-display">$$\frac{S_n}{n} \xrightarrow{P} \mu \quad (n \to \infty)$$</div><p>样本平均值收敛到期望值。这是概率论最根本的定律——解释了为什么随机现象在大样本下呈现确定性，是保险、赌场和科学的理论基础。<br><span class="en">The sample mean converges to the expected value. The most fundamental law of probability — it explains why randomness yields certainty in large samples. The theoretical basis of insurance, casinos, and science.</span></p></div>
+      <div class="th-card"><h3>中心极限定理 <span class="en">Central Limit Theorem</span></h3><div class="formula-display">$$\frac{S_n - n\mu}{\sigma\sqrt{n}} \xrightarrow{d} \mathcal{N}(0,1)$$</div><p>大量独立同分布随机变量的和，经标准化后趋于标准正态分布。这解释了为什么正态分布无处不在——它是所有随机性叠加的终极归宿。<br><span class="en">The sum of many i.i.d. random variables, standardized, converges to the standard normal distribution. This explains why the bell curve is everywhere — it is the ultimate destiny of aggregated randomness.</span></p></div>
+      <div class="th-card"><h3>贝叶斯定理 <span class="en">Bayes' Theorem</span></h3><div class="formula-display">$$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$</div><p>在获得新证据 B 后，如何更新我们对 A 的信念？这个公式给出了理性的答案。贝叶斯方法在机器学习、医学诊断和科学推理中日益占据核心地位。<br><span class="en">Given new evidence B, how should we update our belief about A? This formula gives the rational answer. Bayesian methods are increasingly central to ML, medical diagnosis, and scientific reasoning.</span></p></div>
+      <div class="th-card"><h3>柯尔莫哥洛夫公理 <span class="en">Kolmogorov Axioms</span></h3><div class="formula-display">$$P(\Omega)=1,\; P(A)\ge 0,\; P\!\left(\bigsqcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty P(A_i)$$</div><p>三个简单的公理奠定了整个概率论的逻辑基础。柯尔莫哥洛夫将概率从哲学争论中解放出来，使之成为测度论框架下的一门严格数学。<br><span class="en">Three simple axioms form the logical foundation of all probability theory. Kolmogorov freed probability from philosophical debate, making it a rigorous mathematical discipline within the framework of measure theory.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<footer><p>数学之美 &mdash; 献给所有热爱思考的心灵 &nbsp;|&nbsp; <span class="en">Beauty of Math — For all who love to think</span></p></footer>
+</body>
+</html>

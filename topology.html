@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>拓扑学 / Topology — 数学之美</title>
+<script>
+MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] }, options: { ignoreHtmlClass: 'no-mathjax' } };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="branch.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">数学<span>之美</span> <span class="en">Beauty of Math</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#timeline">时间线 <span class="en">Timeline</span></a></li>
+      <li class="nav-dropdown">
+        <a>数学分支 <span class="en">Branches</span> &#x25BE;</a>
+        <div class="nav-dropdown-menu">
+          <a href="algebra.html">算术与代数 <span class="en">Algebra</span></a>
+          <a href="geometry.html">几何 <span class="en">Geometry</span></a>
+          <a href="analysis.html">数学分析 <span class="en">Analysis</span></a>
+          <a href="number-theory.html">数论 <span class="en">Number Theory</span></a>
+          <a href="probability.html">概率论与统计 <span class="en">Probability</span></a>
+          <a href="topology.html" style="color:#d4a853;">拓扑学 <span class="en">Topology</span></a>
+          <a href="foundations.html">基础与逻辑 <span class="en">Foundations</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#messages">留言板 <span class="en">Guestbook</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1><em>拓扑学</em></h1>
+    <p class="sub">"橡皮膜上的几何学"——当形状可以任意拉伸，什么还保持不变？</p>
+    <p class="en" style="font-size:0.95rem;">"Rubber-sheet geometry" — when shapes can be stretched arbitrarily, what remains invariant?</p>
+  </div>
+  <div class="scroll-hint"><span>&#x25BC;</span></div>
+</header>
+
+<section>
+  <div class="section-inner">
+    <div class="section-title"><h2>发展历史</h2><p class="en-sub">Historical Development</p><div class="line"></div></div>
+    <div class="timeline-wrap">
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1736 年 &nbsp;<span class="en">1736</span></div><h3>欧拉与柯尼斯堡七桥 <span class="en">Euler & the Seven Bridges</span></h3><p>欧拉证明无法不重复地走过全部七座桥。他不再关心桥的长度和位置，而只关注"连或不通"的关系——图论与拓扑学的共同起点。<br><span class="en">Euler proved it impossible to cross all seven bridges without repetition. He cared nothing about lengths or positions, only connectivity — the common origin of graph theory and topology.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1750 年 &nbsp;<span class="en">1750</span></div><h3>欧拉多面体公式 <span class="en">Euler's Polyhedron Formula</span></h3><p>任何凸多面体满足 V−E+F=2。这是拓扑不变量最早的例子——无论多面体被拉伸或扭曲，这个关系始终成立。<br><span class="en">For any convex polyhedron, V−E+F=2. The earliest example of a topological invariant — it holds no matter how the polyhedron is stretched or twisted.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1858 年 &nbsp;<span class="en">1858</span></div><h3>莫比乌斯带 <span class="en">Möbius Strip</span></h3><p>莫比乌斯和利斯廷独立发现了只有一面一边的曲面——取一条纸带扭转180°后粘合两端即可得到，是不可定向曲面的经典例子。<br><span class="en">Möbius and Listing independently discovered a surface with only one side and one edge. Take a strip, twist it 180°, and join — the classic example of a non-orientable surface.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1895 年 &nbsp;<span class="en">1895</span></div><h3>庞加莱与《位置分析》 <span class="en">Poincaré: Analysis Situs</span></h3><p>引入基本群和同调理论，正式开创了代数拓扑学。用代数不变量（群、环）来区分拓扑空间——"洞"的数目和结构成为了空间的指纹。<br><span class="en">Introduced the fundamental group and homology theory, officially founding algebraic topology. Algebraic invariants (groups, rings) distinguish topological spaces — holes become a space's fingerprint.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1904 年 &nbsp;<span class="en">1904</span></div><h3>庞加莱猜想 <span class="en">Poincaré Conjecture</span></h3><p>每一个单连通的三维闭流形都同胚于三维球面 S³。这个看似简单的猜想成为拓扑学最著名的难题，直到 2003 年才被佩雷尔曼证明。——他为此拒绝了菲尔兹奖和百万美元奖金。<br><span class="en">Every simply connected closed 3-manifold is homeomorphic to the 3-sphere S³. Proved by Perelman in 2003 — he declined both the Fields Medal and the million-dollar Clay prize.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">1940 — 1950 年代 &nbsp;<span class="en">1940s–1950s</span></div><h3>纤维丛与示性类 <span class="en">Fiber Bundles & Characteristic Classes</span></h3><p>惠特尼、陈省身、庞特里亚金发展了纤维丛理论和示性类。陈省身的"陈类"成为连接拓扑学、微分几何和理论物理的桥梁。<br><span class="en">Whitney, Chern, and Pontryagin developed fiber bundle theory and characteristic classes. Chern classes became the bridge connecting topology, differential geometry, and theoretical physics.</span></p></div><div class="tl-spacer"></div></div>
+
+      <div class="tl-item"><div class="tl-dot"></div>
+        <div class="tl-content"><div class="tl-year">21 世纪 &nbsp;<span class="en">21st Century</span></div><h3>拓扑数据分析 <span class="en">Topological Data Analysis</span></h3><p>持久同调被用来分析高维数据的"形状"——在神经科学、材料科学和机器学习中识别数据中隐藏的拓扑结构。拓扑学正在成为数据科学的新工具。<br><span class="en">Persistent homology analyzes the "shape" of high-dimensional data — identifying hidden topological structures in neuroscience, materials science, and ML. Topology is becoming a new tool for data science.</span></p></div><div class="tl-spacer"></div></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="dark-section">
+  <div class="section-inner">
+    <div class="section-title"><h2>重要结论</h2><p class="en-sub">Key Theorems</p><div class="line"></div></div>
+    <div class="theorem-grid">
+      <div class="th-card"><h3>欧拉示性数 <span class="en">Euler Characteristic</span></h3><div class="formula-display">$$\chi = V - E + F$$</div><p>对球面为 2，环面为 0，双环面为 −2……无论怎样拉伸变形，只要不撕裂不粘合，它永不改变——拓扑不变量的经典范例。<br><span class="en">2 for a sphere, 0 for a torus, −2 for a double torus... It never changes under stretching or twisting, only under tearing or gluing — the classic topological invariant.</span></p></div>
+      <div class="th-card"><h3>布劳威尔不动点定理 <span class="en">Brouwer Fixed-Point Theorem</span></h3><div class="formula-display">$$f: D^n \to D^n \;\Rightarrow\; \exists x: f(x)=x$$</div><p>把 n 维球体连续映射到自身，至少有一个点不动。搅动杯中的咖啡——至少有一个点留在原地。不动点定理是拓扑学应用于经济学的经典工具。<br><span class="en">Any continuous map from the n-dimensional ball to itself has at least one fixed point. Stir your coffee — at least one point stays in place. A classic tool in mathematical economics.</span></p></div>
+      <div class="th-card"><h3>庞加莱猜想 <span class="en">Poincaré Conjecture</span></h3><div class="formula-display">$$\text{Simply connected closed 3-manifold} \cong S^3$$</div><p>佩雷尔曼 2003 年的证明是 21 世纪数学第一个重大突破。他运用里奇流——一个来自几何分析的偏微分方程——解决了这个纯拓扑问题。<br><span class="en">Perelman's 2003 proof was the first great mathematical breakthrough of the 21st century. He used Ricci flow — a PDE from geometric analysis — to solve this purely topological problem.</span></p></div>
+      <div class="th-card"><h3>毛球定理 <span class="en">Hairy Ball Theorem</span></h3><div class="formula-display">$$\text{Even-dimensional spheres admit no nonvanishing tangent vector field}$$</div><p>你无法把一个毛茸茸的球梳得完全平整——至少会有一个旋。地球上每时每刻至少存在一个水平风速为零的点，这是它最直观的推论。<br><span class="en">You cannot comb a hairy ball flat — there will always be at least one cowlick. Its most intuitive corollary: at every moment, there is at least one point on Earth with zero horizontal wind speed.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<footer><p>数学之美 &mdash; 献给所有热爱思考的心灵 &nbsp;|&nbsp; <span class="en">Beauty of Math — For all who love to think</span></p></footer>
+</body>
+</html>
