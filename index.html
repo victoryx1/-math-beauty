@@ -502,18 +502,29 @@ function submitMsg() {
   var title = document.getElementById('msgTitle').value.trim();
   var body = document.getElementById('msgBody').value.trim();
   if (!body) { showToast('请填写留言内容 / Please write a message', true); return; }
+  var nameFinal = name || '匿名 / Anonymous';
+  var titleFinal = title || '无标题 / Untitled';
+  // Save locally
   var msgs = getMsgs();
-  msgs.push({
-    name: name || '匿名 / Anonymous',
-    title: title || '无标题 / Untitled',
-    body: body,
-    time: new Date().toLocaleString('zh-CN', {hour12:false})
-  });
+  msgs.push({ name: nameFinal, title: titleFinal, body: body, time: new Date().toLocaleString('zh-CN', {hour12:false}) });
   saveMsgs(msgs);
+  // Send to developer via Web3Forms
+  var formData = new FormData();
+  formData.append('access_key', '97becc69-740d-4a2c-adaf-143c27cf9be3');
+  formData.append('subject', '[数学之美留言] ' + titleFinal);
+  formData.append('from_name', nameFinal);
+  formData.append('name', nameFinal);
+  formData.append('message', '标题：' + titleFinal + '\n\n留言：' + body + '\n\n时间：' + new Date().toLocaleString('zh-CN', {hour12:false}) + '\n来源：数学之美网站');
+  fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if (data.success) { showToast('留言已提交！/ Message sent!'); }
+      else { showToast('发送失败，请重试 / Failed, please retry', true); }
+    })
+    .catch(function(){ showToast('网络错误，请重试 / Network error', true); });
   document.getElementById('msgName').value = '';
   document.getElementById('msgTitle').value = '';
   document.getElementById('msgBody').value = '';
-  showToast('留言已提交！/ Message submitted!');
   if (isAuthor) renderMsgs();
 }
 
